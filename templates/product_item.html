@@ -1,0 +1,59 @@
+<style>
+    .img-up {
+        width: 270px;
+        height: 540px;
+        margin: 0 auto;
+    }
+
+
+
+</style>
+
+
+<div class="col-lg-3" style="margin-top: 20px;">
+
+    <div class="product-item img-up">
+
+        <div>
+        <a href='{% url 'product' product_image.id %}'>
+                {% if product_image.image %}
+                    <img src="{{ product_image.image.url }}" class="img-responsive" style="width: 90%; height: 350px;
+    margin: 0 auto;">
+                {% else %}
+                    <img src="/static/none.png" class="img-responsive" style="width: 90%; height: 350px;
+    margin: 0 auto;">
+                {% endif %}
+            </a>
+        </div>
+
+        {% if product_image.discount %}
+            <div class="discount-container">
+                <span>{{ product_image.discount }}%</span>
+            </div>
+        {% endif %}
+
+        <h4>{{ product_image.name }}</h4>
+        <h4>{{ product_image.author }}</h4>
+        <p>
+            {{ product_image.short_description|truncatechars_html:20 }}
+        </p>
+        <div>
+            {{ product_image.price }} UAH
+        </div>
+        <div>
+            {{ product_image.created }}
+        </div>
+    </div>
+</div>
+{#<div class="carousel-cell">#}
+{#<h3>{{ product_image.name }}</h3>#}
+{#      <a class="more" href="">{{ product_image.author }}</a>#}
+{##}
+{#            <a href='{% url 'product' product_image.id %}'>#}
+{#                <img src="{{ product_image.image.url }}">#}
+{#            </a>#}
+{##}
+{#      <div class="price">#}
+{#        {{ product_image.price }} UAH#}
+{#      </div>#}
+{#    </div>#}

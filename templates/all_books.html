@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block all %}
+    <div class="section section1">
+        <div class="container">
+            <div class="row">
+                <form method = "post">
+                {% csrf_token %}
+                    <h4>Sort by date</h4>
+                <select id="engine" name="engine">
+                    <option value="updated">Newest</option>
+                    <option value="-updated">Older</option>
+                </select>
+                <input type="submit" value="sort">
+                </form>
+                {% for product_image in products_images %}
+                    {% include 'product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

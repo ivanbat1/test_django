@@ -1,0 +1,96 @@
+<style>
+
+    .basket-items {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        background-color: whitesmoke;
+        z-index: 999;
+        padding: 10px;
+    }
+
+    .margin-top {
+        margin-top: 10px;
+    }
+
+</style>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+            </button>
+            <a class="navbar-brand" href="/">My project</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/admin/">Admin</a></li>
+                <li><a href="/add/">Add book </a></li>
+                <li><a href="/sorted/">All books</a></li>
+{#                <li class="dropdown">#}
+{#                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"#}
+{#                       aria-expanded="false">Новыйе добавленые <span class="caret"></span></a>#}
+{#                    <ul class="dropdown-menu">#}
+{#                        <li><a href="#">Action</a></li>#}
+{#                        <li><a href="#">Another action</a></li>#}
+{#                        <li><a href="#">Something else here</a></li>#}
+{#                        <li role="separator" class="divider"></li>#}
+{#                        <li class="dropdown-header">Nav header</li>#}
+{#                        <li><a href="#">Separated link</a></li>#}
+{#                        <li><a href="#">One more separated link</a></li>#}
+
+{#                    </ul>#}
+{#                </li>#}
+                {#              <li class="dropdown">#}
+                {#                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>#}
+                {#              </li>#}
+            </ul>
+        </div>
+    </div>
+    {#        <a href="/add/">добавить книгу</a>#}
+    {#        <a href="/admin/">Админ</a>#}
+    {#        <a href="/sorted/">Все книги</a>#}
+    {#        <div id="navbar" class="navbar-collapse collapse">#}
+    {#            <ul class="nav navbar-nav navbar-right">#}
+    {#                <li>#}
+    {#                    <a href="" class="dropdown-toggle basket-container" data-toggle="dropdown" role="button"#}
+    {#                       aria-haspopup="true" aria-expanded="false">Корзина <span#}
+    {#                            id="basket_total_amount caret"></span><span class="badge" id="basket_total_nmb">#}
+    {#                        {% if products_total_nmb %}#}
+    {#                            ({{ products_total_nmb }})#}
+    {#                        {% else %}#}
+    {#                            (0)#}
+    {#                        {% endif %}#}
+    {#                    </span></a>#}
+    {##}
+    {#                    <ul class="dropdown-menu basket-items hidden">#}
+    {#                        {% for product_in_basket in products_in_basket %}#}
+    {#                            <li>#}
+    {#                                {{ product_in_basket.product.name }} {{ product_in_basket.nmb }} шт.#}
+    {#                                по {{ product_in_basket.price_per_item }} грн.#}
+    {#                                <a class="delete-item" href="/" data-product_id="{{ product_in_basket.id }}">x</a>#}
+    {#                            </li>#}
+    {#                        {% endfor %}#}
+    {#                        <li>#}
+    {#                            <a href="{% url 'checkout' %}">#}
+    {#                                Оформить заказ#}
+    {#                            </a>#}
+    {#                        </li>#}
+    {#                    </ul>#}
+    {##}
+    {#                </li>#}
+    {#                <li>#}
+    {#                    <form class="form-inline margin-top" action="/search/" method="post">{% csrf_token %}#}
+    {#                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"#}
+    {#                               name='input_text'>#}
+    {#                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name='min-price' value="0">#}
+    {#                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name='max-price' value="0">#}
+    {#                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Искать</button>#}
+    {#                    </form>#}
+    {#                </li>#}
+    {#            </ul>#}
+    {#        </div><!--/.nav-collapse -->#}
+    </div>
+</nav>
