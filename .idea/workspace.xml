@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5245fcb7-6c93-4537-a869-206cd3be909c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/.idea/dataSources/de974ec4-2761-467f-a3c4-4a061de088c1/_metadata_/metadata_i.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home_page.html" afterPath="$PROJECT_DIR$/templates/home_page.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
