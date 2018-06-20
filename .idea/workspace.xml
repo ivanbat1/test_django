@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5245fcb7-6c93-4537-a869-206cd3be909c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manager/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manager/tokens.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manager/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/manager/acc_active_email.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/manager/activate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/manager/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/manager/register.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/add_new_book.html" afterPath="$PROJECT_DIR$/templates/products/add_new_book.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/all_books.html" afterPath="$PROJECT_DIR$/templates/products/all_books.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/change_book.html" afterPath="$PROJECT_DIR$/templates/products/change_book.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/home_page.html" afterPath="$PROJECT_DIR$/templates/products/home_page.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/product.html" afterPath="$PROJECT_DIR$/templates/products/product.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/product_item.html" afterPath="$PROJECT_DIR$/templates/products/product_item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/forms.py" afterPath="$PROJECT_DIR$/books/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/models.py" afterPath="$PROJECT_DIR$/books/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/views.py" afterPath="$PROJECT_DIR$/books/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/navbar.html" afterPath="$PROJECT_DIR$/templates/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_exam/settings.py" afterPath="$PROJECT_DIR$/test_exam/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_exam/urls.py" afterPath="$PROJECT_DIR$/test_exam/urls.py" />
-    </list>
+    <list default="true" id="5245fcb7-6c93-4537-a869-206cd3be909c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,8 +120,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/books/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+            <state relative-caret-position="225">
+              <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -798,8 +774,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/books/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        <state relative-caret-position="225">
+          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
