@@ -27,3 +27,6 @@ class Product(models.Model):
     def __str__(self):
         return "%s, %s" % (self.price, self.name)
 
+class Http(models.Model):
+    http_info = models.CharField(max_length=64, blank=False, null=True)
+

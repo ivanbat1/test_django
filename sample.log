@@ -1,0 +1,11 @@
+INFO:root:added none and 100 to get Ivan
+INFO:root:description - None 
+ and price - 123123 
+ and author - None
+WARNING:django.request:Not Found: /http_monitor/requests
+INFO:root:description - <built-in method now of type object at 0x8494400> 
+ and price - 123 
+ and author - f34g3434
+INFO:root:date - 2018-06-20 22:14:42.969999 
+ and price - 312312 
+ and author - egt54h56h

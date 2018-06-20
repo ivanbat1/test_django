@@ -31,11 +31,14 @@
                     {{ product.name }}
                 </h1>
                 <div class="">
+                    <p>published_data: {{ product.updated.date }} &#128197;</p>
                     <p>
                         Price: {{ product.price }}
                     </p>
                 </div>
-                <a href="change/">change</a>
+                {% if username %}
+                    <a href="change/">change</a>
+                {% endif %}
                 <div>
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">

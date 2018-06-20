@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block login %}
+
+        <div class="general-container">
+    <div class="container top-container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div>
+
+
+
+
+  <form method="post">
+        {% csrf_token %}
+{#        {{ form.errors }}#}
+{#        <h5>Name user</h5>#}
+{#        {{ form.username }}<br/>#}
+{#        <h5>mail</h5>#}
+{#        {{ form.email }}<br/>#}
+{#        {% if form.password1.errors %}#}
+{#                        <ol>#}
+{#                            {% for error in form.password1.errors %}#}
+{#                                <li><strong>{{ error|escape }}</strong></li>#}
+{#                            {% endfor %}#}
+{#                        </ol>#}
+{#                    {% endif %}#}
+{#        <h5>Password 1</h5>#}
+{#        {{ form.password1 }}<br/>#}
+{#        {{ form.password2.errors }}<br/>#}
+{#        <h5>Password 2</h5>#}
+{#        {{ form.password2 }}#}
+  <h6>Check your email</h6>
+{% for field in form %}
+    <div class="form-group">
+        {{ field.errors }}
+        {{ field.html_name }}<br>
+        {{ field }}
+        {% if field.help_text %}
+        <p class="help">{{ field.help_text|safe }}</p>
+        {% endif %}
+    </div>
+{% endfor %}
+{#            {{ form }}#}
+
+
+    <button type="submit">Sign up</button>
+  </form>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

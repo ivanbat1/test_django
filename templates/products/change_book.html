@@ -30,7 +30,7 @@
                         <div class="form-group">
                             <div class="col-lg-4">
                                 <label>Description</label>
-                                <input type="text" name="description" class="form-control"
+                                <input type="text" name="{{ form.description.html_name }}" class="form-control"
                                 >
                             </div>
 
@@ -39,7 +39,7 @@
                             <div class="col-lg-4">
                                 <label>Short description</label>
 
-                                <input type="text" name="short-description" class="form-control"
+                                <input type="text" name="{{ form.short_description.html_name }}" class="form-control"
                                 >
                             </div>
 
@@ -51,9 +51,20 @@
                             </div>
 
                         </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-4">
+                                <label>Publish date</label>
+                                {{ form.update }}
+                            </div>
+
+                        </div>
+
+
                         <div class="text-right">
                                 <button type="submit" class="btn btn-primary btn-lg">Change</button>
                         </div>
+
 
 </form>
         </div></div>
