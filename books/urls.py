@@ -6,5 +6,5 @@ urlpatterns = [
     path("", home),
     path('add/', add_new),
     path('product/<int:product_id>/change/', change_product),
-    path('sorted/', sorted),
+    path('sorted/', sorted_by_data),
 ]

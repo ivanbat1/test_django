@@ -6,9 +6,6 @@ from datetime import datetime
 
 logging.basicConfig(filename="sample.log", level=logging.INFO)
 
-def log(date, price, author):
-    logging.info("date - %s \n and price - %s \n and author - %s" % (date, price, author))
-
 
 # Create your views here.
 def product(request, product_id):
@@ -29,7 +26,7 @@ def change_product(request, product_id):
                                                                         description=request.POST.get('description'),
                                                                           short_description=request.POST.get('short_description'),
                                                                           )
-            log(request.POST.get('update'), request.POST.get('price'), request.POST.get('author'))
+            logging.info("the book was changed \n date - %s %s %s" % (request.POST.get('update_month'),request.POST.get('update_day'),request.POST.get('update_year')))
             return redirect('/')
     return render(request, 'products/change_book.html', locals())
 
@@ -54,7 +51,7 @@ def add_new(request):
         if form.is_valid():
             if 'photo' in request.FILES:
                 form.photo = request.FILES['photo']
-            log(datetime.now(), request.POST.get('price'), request.POST.get('author'))
+                logging.info(("the book was added date - %s \n" % (datetime.now())))
             form.save(commit=True)
             return redirect('/')
         else:
@@ -62,7 +59,7 @@ def add_new(request):
 
     return render(request, 'products/add_new_book.html', locals())
 
-def sorted(request):
+def sorted_by_data(request):
     username = auth.get_user(request).username
     products_images = Product.objects.all()
     if request.POST:

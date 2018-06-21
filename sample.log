@@ -9,3 +9,19 @@ INFO:root:description - <built-in method now of type object at 0x8494400>
 INFO:root:date - 2018-06-20 22:14:42.969999 
  and price - 312312 
  and author - egt54h56h
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /product/50/change/
+Traceback (most recent call last):
+  File "/home/ivan/.virtualenvs/test_exam/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ivan/.virtualenvs/test_exam/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ivan/.virtualenvs/test_exam/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ivan/PycharmProjects/test_exam/books/views.py", line 32, in change_product
+    log(("the book was changed \n date - %s \n and price - %s \n and author - %s" % (request.POST.get('update'), request.POST.get('price'), request.POST.get('author'))))
+TypeError: log() missing 2 required positional arguments: 'price' and 'author'
+INFO:root:the book was changed 
+ date - None
+INFO:root:the book was changed 
+ date - None
